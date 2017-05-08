@@ -2,7 +2,7 @@ cordova-image-picker
 ===================
 
 Forked from https://github.com/burator/ImagePicker
-
+Added NPM Package for Cordova 7
 
 Cordova Plugin For Multiple Image Selection - implemented for iOS and Android 4.0 and above.
 
