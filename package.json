@@ -1,0 +1,24 @@
+{
+  "name": "cordova-image-picker",
+  "version": "2.1.7",
+  "description": "cordova-imagePicker\r ===================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielehrhardt/ImagePicker.git"
+  },
+  "keywords": [
+    "cordova",
+    "image",
+    "picker"
+  ],
+  "author": "Daniel Ehrhardt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Telerik-Verified-Plugins/ImagePicker/issues"
+  },
+  "homepage": "https://github.com/Telerik-Verified-Plugins/ImagePicker#readme"
+}
