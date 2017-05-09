@@ -117,7 +117,7 @@ public class ImagePicker extends CordovaPlugin {
         }
         // This method executes async and we seem to have no known way to receive the result
         // (that's why these methods were later added to Cordova), so simply returning ok now.
-        callbackContext.success(new JSONArray());
+        callbackContext.success();
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-image-picker"
-        version="2.1.7">
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="cordova-image-picker"
+  version="2.1.8">
 
     <name>ImagePicker</name>
 
@@ -30,7 +30,7 @@
         
         <preference name="PHOTO_LIBRARY_USAGE_DESCRIPTION" default=" " />
         <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
-            <string>$PHOTO_LIBRARY_USAGE_DESCRIPTION</string>
+          <string>$PHOTO_LIBRARY_USAGE_DESCRIPTION</string>
         </config-file>
 
         <header-file src="src/ios/SOSPicker.h" />
@@ -140,8 +140,7 @@
         <source-file src="src/android/Library/res/values-hu/multiimagechooser_strings_hu.xml" target-dir="res/values-hu"/>
         <source-file src="src/android/Library/res/values-ja/multiimagechooser_strings_ja.xml" target-dir="res/values-ja"/>
         <source-file src="src/android/Library/res/values-ko/multiimagechooser_strings_ko.xml" target-dir="res/values-ko"/>
-        <source-file src="src/android/Library/res/values-pl/multiimagechooser_strings_pl.xml" target-dir="res/values-pl"/>
-    
+
         <framework src="src/android/ignorelinterrors.gradle" custom="true" type="gradleReference"/>
         <framework src="src/android/androidtarget.gradle" custom="true" type="gradleReference"/>
     </platform>
