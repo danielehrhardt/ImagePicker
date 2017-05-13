@@ -6,4 +6,6 @@
     <string name="requesting_thumbnails">Hämtar tumnaglar, var god vänta</string>
     <string name="multi_image_picker_processing_images_title">Behandlar bilder</string>
     <string name="multi_image_picker_processing_images_message">Det här kan ta en stund</string>
+    <string name="discard">Cancel</string>
+    <string name="done">OK</string>
 </resources>
