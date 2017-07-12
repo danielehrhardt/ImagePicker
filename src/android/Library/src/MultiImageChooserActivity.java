@@ -179,26 +179,29 @@ public class MultiImageChooserActivity extends AppCompatActivity implements
         setupHeader();
         updateAcceptButton();
         progress = new ProgressDialog(this);
-        progress.setTitle(getString(fakeR.getId("string", "multi_image_picker_processing_images_title")));
-        progress.setMessage(getString(fakeR.getId("string", "multi_image_picker_processing_images_message")));
+        progress.setTitle(getString(fakeR.getId("string", "processing_images_title")));
+        progress.setMessage(getString(fakeR.getId("string", "processing_images_message")));
     }
 
     @Override
     public void onItemClick(AdapterView<?> arg0, View view, int position, long id) {
         String name = getImageName(position);
-        int rotation = getImageRotation(position);
 
         if (name == null) {
             return;
         }
 
         boolean isChecked = !isChecked(position);
+		int rotation = getImageRotation(position);
 
         if (maxImages == 0 && isChecked) {
+			String maxSelectionCountErrorTitle = getString(fakeR.getId("string", "maximum_selection_count_error_title"));
+            String maxSelectionCountErrorMessage = getString(fakeR.getId("string", "maximum_selection_count_error_message"));
+		
             isChecked = false;
             new AlertDialog.Builder(this)
-                    .setTitle("Maximum " + maxImageCount + " Photos")
-                    .setMessage("You can only select " + maxImageCount + " photos at a time.")
+                    .setTitle(maxSelectionCountErrorTitle)
+                    .setMessage(String.format(maxSelectionCountErrorMessage, maxImageCount))
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();

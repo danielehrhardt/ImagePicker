@@ -4,8 +4,10 @@
     <string name="free_version_label">Free version - Images left: %d</string>
     <string name="error_database">There was an error opening the images database. Please report the problem.</string>
     <string name="requesting_thumbnails">Requesting thumbnails, please be patient</string>
-    <string name="multi_image_picker_processing_images_title">Processing images</string>
-    <string name="multi_image_picker_processing_images_message">This may take a moment</string>
+    <string name="processing_images_title">Processing Images</string>
+    <string name="processing_images_message">This may take a few moments</string>
+    <string name="maximum_selection_count_error_title">Limit reached</string>
+    <string name="maximum_selection_count_error_message">You can only select %d photos at once</string>
     <string name="discard">Cancel</string>
     <string name="done">OK</string>
 </resources>

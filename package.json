@@ -1,6 +1,6 @@
 {
   "name": "cordova-image-picker",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "description": "cordova-imagePicker\r ===================",
   "main": "index.js",
   "scripts": {
